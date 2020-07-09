@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SIGN UP </title>
+        <style>
+
+            body{
+                background-image: url('./image/image6.jpg');
+                line-height: 1.8;
+            }
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            a{
+                text-decoration: none;
+            }
+            #cont{
+                margin: 30px auto;
+                max-width: 400px;
+                padding: 20px;
+            }
+            .form_wrap{
+                background: ;
+                padding: 15px 20px;
+                color: black;
+                border-radius: 15px;
+                background: cadetblue;
+            }
+            .form_wrap h1,.form_wrap p{
+                text-align: center;
+                color:black;
+            }
+            .form_wrap .form_group{
+                margin-top: 20px;
+            }
+            .form_wrap .form_group label{
+                display: block;
+                color: #f5deb3;
+            }
+            .form_wrap .form_group input{
+                width: 100%;
+                padding: 10px;
+                border: #ddd 1px solid black;
+                border-radius: 5px;
+            }
+            .form_wrap button{
+                display: block;
+                width: 100%;
+                background-color: #49c1a2;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            .form_wrap button:hover{
+                background-color: #37a08e;
+            }
+            .form_wrap .bottom-text{
+                font-size: 13px;
+                margin-top: 20px;
+            }
+            footer{
+                text-align: center;
+                margin-top: 10px;
+            }
+            footer a{
+                color: #49c1a2;
+            }
+        </style>
+        <script type="text/javascript">
+        function f1(){
+ var s = document.getElementById("pass1").value;
+ var d =document.getElementById("pass2").value;
+    if(s!=d){
+    alert("PASSWORD DOESNOT MATCHES TRY AGAIN !!!!");
+    }        
+   </script>
+    </head>
+    <body>
+        <form method="POST" action="#">
+            <div id="cont">
+                <div class="form_wrap">
+                    <h1>
+                        SIGN UP
+                    </h1>
+                    <div class="form_group">
+                        <label for="First Name">
+                            First Name
+                        </label>
+                        <input type="text" name="First-Name" id="First_name" required="required">
+                    </div>
+                    <div class="form_group">
+                        <label for="Last Name">
+                            Last Name
+                        </label>
+                        <input type="text" name="Last-Name" id="Last_name" required="required">
+                    </div>
+                    <div class="form_group">
+                        <label for="Email">
+                            Email
+                        </label>
+                        <input type="email" name="Email" id="Email" required="required">
+                    </div>
+                    <div class="form_group">
+                        <label for="Number">
+                            PHONE NUMBER
+                        </label>
+                        <input type="number" name="Number" id="Num" required="required">
+                    </div>
+                    <div class="form_group">
+                        <label for="Password">
+                         PASSWORD
+                        </label>
+                        <input type="password" name="PASS1" id="pass1" required="required">
+                    </div>
+                    <div class="form_group">
+                        <label for="First Name">
+                           CONFIRM PASSWORD                       
+                         </label>
+                        <input type="password" name="PASS2" id="pass2" required="required">
+                    </div>
+                    <button type="submit" class="btn" onclick="f1()">
+                        SUBMIT
+                    </button>
+                    <p>
+                        By Clicking the Sign up, You Agree to all our <a href="#">Terms & Conditions</a> and <a href="#">Privacy & Policy</a>
+                    </p>
+                </form>
+                </div>
+                <footer>
+                    <p>
+                     <a href="#">Already Have Account ? CLICK Here</a>
+                    </p>
+                </footer>
+            </div>
+    </body>
+</html>
