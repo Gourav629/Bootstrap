@@ -1,2 +1,2 @@
 # Bootstrap
-BootStrap Different types of css ecditings
+BootStrap Different types of css editings
